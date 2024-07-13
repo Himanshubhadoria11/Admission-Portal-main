@@ -19,6 +19,7 @@ app.use(fileUpload({ useTempFiles: true }))
 //connect flash and sessions
 const session = require('express-session')
 const flash = require('connect-flash');
+const { connect } = require('mongoose')
 //messages
 app.use(session({
   secret: 'secret',
@@ -28,6 +29,7 @@ app.use(session({
 }));
 //Flash messages
 app.use(flash());
+
 
 
 // parse application/x-www-form-urlencoded
