@@ -19,20 +19,20 @@
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
 
-                <div class="col-md-7 col-lg-8">
+                <div class="col-md-8 col-lg-8">
                     <h4 class="mb-3">Contact Us!</h4>
-                    <form class="needs-validation" novalidate="">
+                    <form action="/contact_insert" method="post" class="needs-validation" novalidate="">
                         <div class="row g-3 paddingValue">
                             <div class="col-sm-6">
-                                <label for="firstName" class="form-label">First name</label>
-                                <input type="text" class="form-control" id="firstName" placeholder="" value=""
+                                <label for="firstName" class="form-label"> Name</label>
+                                <input name="name" type="text" class="form-control" id="firstName" placeholder="" value=""
                                     required="">
                                 <div class="invalid-feedback">
                                     Valid first name is required.
                                 </div>
                             </div>
 
-                            <div class="col-sm-6">
+                            <!-- <div class="col-sm-6">
                                 <label for="lastName" class="form-label">Last name</label>
                                 <input type="text" class="form-control" id="lastName" placeholder="" value=""
                                     required="">
@@ -51,27 +51,27 @@
                                         Your username is required.
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
 
-                            <div class="col-12">
+                            <div class="col-8">
                                 <label for="email" class="form-label">Email <span
-                                        class="text-body-secondary">(Optional)</span></label>
-                                <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                                        class="text-body-secondary"></span></label>
+                                <input name="email" type="email" class="form-control" id="email" placeholder="you@example.com">
                                 <div class="invalid-feedback">
                                     Please enter a valid email address for shipping updates.
                                 </div>
                             </div>
 
-                            <div class="col-12">
+                            <div class="col-8">
                                 <label for="address" class="form-label">Address</label>
-                                <input type="text" class="form-control" id="address" placeholder="1234 Main St"
+                                <input name="address" type="text" class="form-control" id="address" placeholder="1234 Main St"
                                     required="">
                                 <div class="invalid-feedback">
                                     Please enter your shipping address.
                                 </div>
                             </div>
 
-                            <div class="col-12">
+                            <!-- <div class="col-12">
                                 <label for="address2" class="form-label">Address 2 <span
                                         class="text-body-secondary">(Optional)</span></label>
                                 <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
@@ -106,7 +106,7 @@
                         <div class="form-check paddingValue">
                             <input type="checkbox" class="form-check-input" id="save-info">
                             <label class="form-check-label" for="save-info">Save this information for next time</label>
-                        </div>
+                        </div> -->
 
                         </form>
                 </div>
