@@ -295,9 +295,12 @@ class FrontController {
             text: "heelo", // plain text body
             html:
               "<p>Hii " +
-              name +
-              ',Please click here to <a href="http://localhost:4400/verify?id=' +
-              user_id +
+            //   name +
+            //   ',Please click here to <a href="http://localhost:4400/verify?id=' +
+            //   user_id +
+            name +
+            ',Please click here to <a href="https://admission-portal-main.onrender.com/verify?id=' +
+            user_id +
               '">Verify</a>Your mail</p>.',
           });
           //console.log(info);
